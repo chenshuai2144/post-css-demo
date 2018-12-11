@@ -1,0 +1,28 @@
+{
+  "name": "post-css-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenshuai2144/post-css-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenshuai2144/post-css-demo/issues"
+  },
+  "homepage": "https://github.com/chenshuai2144/post-css-demo#readme",
+  "dependencies": {
+    "@types/fs-extra": "^5.0.4",
+    "@types/node": "^10.12.12",
+    "@types/prettier": "^1.15.2",
+    "fs-extra": "^7.0.1",
+    "postcss": "^7.0.6",
+    "prettier": "^1.15.3",
+    "tnode": "^0.1.1"
+  }
+}

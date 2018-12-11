@@ -1,0 +1,17 @@
+.bg-contain {
+  background-color: #fff;
+  /* fit: fill fitHeight cover contain  */
+  background-size: contain;
+  background-image: url(https://flutter.io/assets/flutter-lockup-4cb0ee072ab312e59784d9fbf4fb7ad42688a7fdaea1270ccf6bbf4f34b7e03f.svg);
+  width: 100%;
+  height: 100%;
+}
+
+.bg-fill {
+  background-color: #fff;
+  /* fit: fill fitHeight cover contain  */
+  background-size: 100% 100%;
+  background-image: url(https://flutter.io/assets/flutter-lockup-4cb0ee072ab312e59784d9fbf4fb7ad42688a7fdaea1270ccf6bbf4f34b7e03f.svg);
+  width: 100%;
+  height: 100%;
+}

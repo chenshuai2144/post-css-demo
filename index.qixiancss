@@ -1,0 +1,20 @@
+.temp-base {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-contain {
+  background-color: #fff;
+  /* fit: fill fitHeight cover contain  */
+  fit: url(https://flutter.io/assets/flutter-lockup-4cb0ee072ab312e59784d9fbf4fb7ad42688a7fdaea1270ccf6bbf4f34b7e03f.svg)
+    contain;
+  temp: base;
+}
+
+.bg-fill {
+  background-color: #fff;
+  /* fit: fill fitHeight cover contain  */
+  fit: url(https://flutter.io/assets/flutter-lockup-4cb0ee072ab312e59784d9fbf4fb7ad42688a7fdaea1270ccf6bbf4f34b7e03f.svg)
+    fill;
+  temp: base;
+}
