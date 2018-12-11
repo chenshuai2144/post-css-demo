@@ -64,7 +64,12 @@ postcss()
     from: "./index.qixiancss"
   })
   .then(({ root }) => {
+    // 删除所有的注释
+    root.walkComments(comments => {
+      comments.remove();
+    });
     root.walkRules(rule => {
+      // 保存模板
       if (rule.selector && rule.selector.indexOf("temp") > -1) {
         const tempName = rule.selector.split("-").pop();
         tempMap[tempName] = [...rule.nodes];

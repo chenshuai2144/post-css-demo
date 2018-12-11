@@ -75,7 +75,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     })
         .then(function (_a) {
         var root = _a.root;
+        root.walkComments(function (comments) {
+            comments.remove();
+        });
         root.walkRules(function (rule) {
+            // 保存模板
             if (rule.selector && rule.selector.indexOf("temp") > -1) {
                 var tempName = rule.selector.split("-").pop();
                 tempMap[tempName] = rule.nodes.slice();
