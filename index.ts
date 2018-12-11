@@ -70,7 +70,7 @@ postcss()
     });
     root.walkRules(rule => {
       // 保存模板
-      if (rule.selector && rule.selector.indexOf("temp") > -1) {
+      if (rule.selector && rule.selector.indexOf("temp-") > -1) {
         const tempName = rule.selector.split("-").pop();
         tempMap[tempName] = [...rule.nodes];
         rule.remove();
